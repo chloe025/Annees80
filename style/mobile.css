@@ -1,0 +1,147 @@
+/*LES POLICES IMPORTEES*/
+@font-face{
+	font-family: PolTitre ;
+	src:url("../polices/Blenda Script.otf");
+}
+@font-face{
+	font-family: PolSousTitre ;
+	src:url("../polices/Neon.ttf");
+}
+@font-face{
+	font-family: PolTexte ;
+	src:url("../polices/Lazer84.ttf");
+}
+
+#fond2{			/* pour l'image de fond qui prend toute la largeur*/
+	left: 0;
+	min-height: 100%;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: -999;
+}
+#fond{
+	display: none;
+}
+header{
+	background-color: rgba(0, 0, 0, 0.451);
+}
+body{
+	margin:0;
+}
+section{
+	color:white;
+	font-family: PolSousTitre;
+	font-size: 18px;
+	background-color: rgba(0,0,0,0.4);
+	text-align: justify;
+	padding: 10px;
+	margin-top: 30px;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+section p {
+	margin: 0;
+	padding: 20px;
+}
+footer{
+	background-color: #577284;
+	color: white;
+}
+footer a{
+	color: white;
+}
+footer p{
+	margin-bottom: 0;
+	padding: 10px;
+}
+#GrosTitre{
+	font-family: PolTitre;
+	text-align: center;
+	margin: auto;
+	min-height: 100px;	
+	line-height: 100px;
+	font-size: 50px;
+	color: white;
+}
+li{
+	font-size: 20px;
+}
+
+
+.imgpetite {
+	display:none;
+}
+.gauche{
+	display: none;
+}
+.droite{
+	display:none;
+}
+.titre{
+	font-size: 28px;
+	color: rgb(18, 145, 203);
+	text-decoration: underline;
+	text-align: center;
+	margin: 0;
+	padding: 2%
+}
+.Titre2{
+    font-size: 24px;
+    color: lightblue;
+    text-decoration:underline;
+    text-transform: none;
+    text-align: center;
+}
+.invisible{
+	display: none;
+}
+.vid{
+	display:none;
+}
+
+
+
+
+
+
+#bouton{
+	display: none;
+}
+#menu {
+	cursor: default;
+	min-height:50px; 
+	line-height: 50px;
+    background-color: transparent;
+    font-family: PolSousTitre ;
+}
+#menu li {
+	margin: 0 auto 0 auto;
+}
+#menu li  a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding : 5px
+}
+#menu ul li .sousMenu {
+    display:none;
+}
+.sousMenu{
+    background-color: silver;
+    width: auto;
+}
+#menu ul li:hover .sousMenu{
+    display: none;
+    position: initial;
+}
+#menu ul li a:focus + .sousMenu{
+    display: flex;
+}
+#menu ul li a:focus + .sousMenu ul {
+    flex-direction: column;
+    width: 100%;
+}
+#menu ul {
+    flex-direction: column;
+}
